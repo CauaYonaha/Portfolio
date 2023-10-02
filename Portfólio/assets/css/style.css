@@ -1,0 +1,361 @@
+*{
+    font-family: 'Open Sans';
+}
+
+/*Background em Fade */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(rgb(200, 201, 150), rgb(200, 200, 175));
+    background-size: cover;
+}
+
+
+/* Barra principal */
+.botoes{
+    color: rgb(255, 255, 255);
+
+
+    text-align: center;
+    text-decoration: none;
+
+ 
+    padding: 10px;
+    margin-top: 8px;
+    border-style: solid;
+    border-radius: 25px;
+    display: inline-block;
+    border-color: rgb(255, 255, 255);
+}
+
+#barra{
+    position: absolute;
+    padding: 0;
+    height: 60px;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: rgba(3, 3, 3, 0.466);
+}
+
+#home{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+    left: 0;
+}
+
+#botaocertificado{
+    position: absolute;
+    margin-right: 20px;
+    right: 0;
+}
+
+#botaocurriculo{
+    position: absolute;
+    margin-right: 150px;
+    right: 0;
+}
+
+
+/* Estilos para a prancheta e o papel */
+#prancheta {
+    position: fixed;
+    top: 150px;
+    left: 900px;
+    width: 300px;
+    height: 475px;
+    border-radius: 15px;
+    background-color: rgb(131, 105, 83);
+}
+
+#papel {
+    position: fixed;
+    top: 175px;
+    left: 925px;
+    width: 250px;
+    height: 415px;
+    border-radius: 5px;
+    background-color: rgb(227, 228, 165);
+}
+
+
+/* Estilos para os clips */
+#clip1 {
+    position: fixed;
+    top: 100px;
+    left: 1010px;
+    height: 20px;
+    width: 20px;
+    border: 30px solid rgb(155, 155, 155);
+    border-radius: 100%;
+}
+
+#clip2 {
+    position: fixed;
+    top: 125px;
+    left: 965px;
+    height: 55px;
+    width: 175px;
+    border-radius: 10px;
+    background-color: rgb(155, 155, 155);
+}
+
+#clip3 {
+    position: fixed;
+    top: 100px;
+    left: 940px;
+    height: 25px;
+    width: 125px;
+    border-radius: 15px;
+    border-top: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 75px solid rgb(155, 155, 155);
+}
+
+
+/* Animações CheckMark */
+@keyframes moveCheck {
+    0% {
+        opacity: 0; /* Quadrado invisível no início */
+        transform: translateX(870px) translateY(277px); /* Começa na posição (0, 0) */
+    }
+    50% {
+        opacity: 1; /* Quadrado se torna visível na metade da animação */
+    }
+    100% {
+        transform: translateX(952px) translateY(277px) rotate(45deg); /* Move para a posição (200px, 100px) */
+    }
+}
+
+@keyframes moveCheck1 {
+    0% {
+        opacity: 0; /* Quadrado invisível no início */
+        transform: translateX(870px) translateY(337px); /* Começa na posição (0, 0) */
+    }
+    50% {
+        opacity: 1; /* Quadrado se torna visível na metade da animação */
+    }
+    100% {
+        transform: translateX(952px) translateY(337px) rotate(45deg); /* Move para a posição (200px, 100px) */
+    }
+}
+
+@keyframes moveCheck2 {
+    0% {
+        opacity: 0; /* Quadrado invisível no início */
+        transform: translateX(870px) translateY(397px); /* Começa na posição (0, 0) */
+    }
+    50% {
+        opacity: 1; /* Quadrado se torna visível na metade da animação */
+    }
+    100% {
+        transform: translateX(952px) translateY(397px) rotate(45deg); /* Move para a posição (200px, 100px) */
+    }
+}
+
+#checkmark {
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 10px;
+    height: 23px;
+    border-radius: 5px;
+    border-bottom: 5px solid #008f00;
+    border-right: 5px solid #00b300;
+    animation: moveCheck 5s ease-in-out forwards;;
+}
+
+#square {
+    position: fixed;
+    top: 275px;
+    left: 940px;
+    width: 30px;
+    height: 30px;
+    border: 5px solid rgb(133, 133, 133);
+    border-radius: 10px;
+}
+
+#checkmark1 {
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 10px;
+    height: 23px;
+    border-radius: 5px;
+    border-bottom: 5px solid #008f00;
+    border-right: 5px solid #00b300;
+    animation: moveCheck1 6s ease-in-out forwards;;
+}
+
+#square1 {
+    position: fixed;
+    top: 335px;
+    left: 940px;
+    width: 30px;
+    height: 30px;
+    border: 5px solid rgb(133, 133, 133);
+    border-radius: 10px;
+}
+
+#checkmark2 {
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 10px;
+    height: 23px;
+    border-radius: 5px;
+    border-bottom: 5px solid #008f00;
+    border-right: 5px solid #00b300;
+    animation: moveCheck2 7s ease-in-out forwards;;
+}
+
+#square2 {
+    position: fixed;
+    top: 395px;
+    left: 940px;
+    width: 30px;
+    height: 30px;
+    border: 5px solid rgb(133, 133, 133);
+    border-radius: 10px;
+}
+
+
+/* Estilos para o texto e títulos */
+.frase {
+    color: rgb(88, 88, 88);
+    position: fixed;
+}
+
+#titulo {
+    position: fixed;
+    font-size: 20px;
+    top: 175px;
+    left: 965px;
+}
+
+.palavra{
+    font-size: 14px;
+}
+
+#frase1 {
+    top: 255px;
+    left: 985px;
+}
+
+#linha1 {
+    position: fixed;
+    height: 3px;
+    width: 150px;
+    top: 310px;
+    left: 985px;
+    border-radius: 25px;
+    background-color: rgba(88, 88, 88, 0.603);
+}
+
+#frase2 {
+    top: 315px;
+    left: 985px;
+}
+
+#linha2 {
+    position: fixed;
+    height: 3px;
+    width: 150px;
+    top: 370px;
+    left: 985px;
+    border-radius: 25px;
+    background-color: rgba(88, 88, 88, 0.603);
+}
+
+#frase3 {
+    top: 375px;
+    left: 985px;
+}
+
+#linha3 {
+    position: fixed;
+    height: 3px;
+    width: 150px;
+    top: 430px;
+    left: 985px;
+    border-radius: 25px;
+    background-color: rgba(88, 88, 88, 0.603);
+}
+
+#texto{
+    font-size: 15px;
+    width: 215px;
+    color: rgb(88, 88, 88);
+    position: fixed;
+    top: 455px;
+    left: 935px;        
+}
+
+
+/* Caixa de Texto */
+#caixadetexto{
+    position: fixed;
+    color: white;
+    padding: 0;
+    height: 225px;
+    top: 30%;
+    left: 25px;
+    width: 450px;
+    border-radius: 10px;
+    border-color: rgb(255, 255, 255);
+    background-color: rgba(3, 3, 3, 0.466);
+}
+
+#frasecx{
+    position: fixed;
+    top: 28%;
+    margin-left: 15px;
+}
+
+#lista{
+    position: fixed;
+    font-size: 18px;
+    top: 35%;
+}
+
+#frase1cx{
+    position: fixed;
+    font-size: 20px;
+    top: 46%;
+    width: 400px;
+    padding: 0;
+    margin-left: 15px;
+}
+
+
+/* Footer */
+.botoesfooter{
+    position: absolute;
+    top: 10%;
+}
+
+#barrafooter{
+    position: absolute;
+    height: 50px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: rgba(3, 3, 3, 0.466);
+}
+
+#github{
+    margin-left: 10px;
+}
+
+#linkedin{
+    margin-left: 55px;
+}
+
+#whatsapp{
+    margin-left: 100px;
+}
